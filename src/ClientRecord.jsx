@@ -1,25 +1,16 @@
+import ClientInfo from "./ClientInfo";
+
 const ClientRecord = () => {
     return (
-        <div className='flex min-h-full flex-col justify-center px-6 py-12 lg:px-8'>
+        <div className='flex min-h-full flex-col justify-center px-6 py-12'>
             <h1 className='text-3xl'>Client Record</h1>
-            <div className='flex'>
-                <p>Name:</p>
-                <p>Date: </p>
-                <p>Phone: </p>
-                <p>Email: </p>
-            </div>
-            <div>
-                <h2>Medical Info</h2>
-                <p>Allergies:</p>
-                <p>Medications:</p>
-                <p>Notes: </p>
-            </div>
-            <div>
-                <h2>Lash Info</h2>
-                <div>
-                    <h3>Service</h3>
+            <ClientInfo />
 
-                    <form>
+            <div>
+                <h2 className='text-2xl'>Lash Info</h2>
+                <div>
+                    <h3 className='text-xl'>Service</h3>
+                    <form className='flex flex-row justify-evenly'>
                         <input
                             type='radio'
                             id='full-set'
@@ -44,6 +35,15 @@ const ClientRecord = () => {
                         />
                         <label htmlFor='removal'>Removal</label>
                     </form>
+                </div>
+                <div>
+                    <h2 className='text-2xl'>Curl</h2>
+                </div>
+                <div>
+                    <h2 className='text-2xl'>Length</h2>
+                </div>
+                <div>
+                    <h2 className='text-2xl'>Thickness</h2>
                 </div>
             </div>
         </div>
