@@ -2,7 +2,7 @@ import ClientInfo from "./ClientInfo";
 
 const ClientRecord = () => {
     return (
-        <div className='flex min-h-full flex-col justify-center px-6 py-12'>
+        <div className=''>
             <h1 className='text-3xl'>Client Record</h1>
             <ClientInfo />
 
@@ -10,7 +10,7 @@ const ClientRecord = () => {
                 <h2 className='text-2xl'>Lash Info</h2>
                 <div>
                     <h3 className='text-xl'>Service</h3>
-                    <form className='flex flex-row justify-evenly'>
+                    <form className=''>
                         <input
                             type='radio'
                             id='full-set'
